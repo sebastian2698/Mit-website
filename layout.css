@@ -1,0 +1,128 @@
+/**************************mobil**********************/
+@media (max-width: 768px) {
+}
+
+/**************************browser**********************/
+@media (min-width: 840px) {
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 30%;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin-inline: auto;
+  }
+  ul {
+    gap: 50px;
+    justify-content: center;
+    border-width: 5px;
+    border-bottom: 10px solid black;
+    position: static;
+  }
+  .tekst {
+    margin: 0;
+  }
+
+  nav {
+    gap: 120px;
+    text-decoration: underline;
+  }
+  /**************************index/forside**********************/
+
+  .grid_3-3-2 {
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    gap: 20px;
+    width: 90%;
+  }
+
+  .intro {
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+    text-align: center;
+  }
+
+  /**************************turneringer**********************/
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .order {
+    order: 1;
+  }
+
+  .tekstdeltag {
+    font-size: 36px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  /**************************reperationer**********************/
+  .grid_5-3 {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 20px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .knaptekst {
+    text-align: center;
+    margin: 0;
+  }
+  .order1 {
+    order: -1;
+  }
+
+  .tekstforklaring {
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  /**************************blog**********************/
+  .grid_3-1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 2.6;
+  }
+
+  .tekstforklaring1 {
+    line-height: 1.6;
+    text-align: center;
+  }
+  /************************ps1,ps2,psp side****************************/
+  .grid_2-3-3-3 {
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr 3fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .grid_2-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 36px;
+  }
+}

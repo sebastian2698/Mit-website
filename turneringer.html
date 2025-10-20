@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/Logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+
+                <li><a href="turneringer.html">Turneringer</a></li>
+                <li><a href="reparationer.html">Reparationer</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+
+
+
+
+        </nav>
+
+
+
+
+    </header>
+    <main>
+        <h1>Retrospils-Turneringer 🕹️🏆</h1>
+        <section class="grid_2-1">
+            <p> Er du klar til at bevise, at du stadig har skills i de klassiske spil? Hos os afholder vi spændende
+                retrospils-turneringer, hvor både nybegyndere og erfarne gamere kan være med.
+                Det handler ikke kun om at vinde men om at dele glæden ved de spil, der startede det hele.
+                Deltag i single- og multiplayer-turneringer Vær med til live-events eller online-battles Vind fede
+                præmier men
+                vigtigst: få en uforglemmelig oplevelse!
+            </p>
+
+
+
+
+            <div class="order">
+                <img src="./img/turnering.jpeg" alt="turnering">
+            </div>
+
+
+        </section>
+        <div class="tekstdeltag">
+            <p> Intresseret i at deltage?
+                Tryk på knappen for at deltage</p>
+            <button id="skiftKnap">Klik her for at deltage</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <script>
+        const knap = document.getElementById("skiftKnap");
+
+        knap.addEventListener("click", () => {
+            if (knap.textContent === "Klik her for at deltage") {
+                knap.textContent = "Du har nu deltaget!";
+            } else {
+                knap.textContent = "Klik her for at deltage";
+            }
+        });
+    </script>
+
+    <script src="menu.js"></script>
+
+</body>
+
+</html>

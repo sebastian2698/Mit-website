@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/Logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+
+                <li><a href="turneringer.html">Turneringer</a></li>
+                <li><a href="reparationer.html">Reparationer</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+
+
+
+
+    </header>
+
+    <main>
+        <h1>Reparationer/værksted</h1>
+        <div class="tekstforklaring">
+            <p>Gamle spil og konsoller 🔧🎮 fortjener nyt liv og det hjælper vi med!</p>
+            <p>Derfor tilbyder vi professionel
+                reparation og
+                vedligeholdelse, så du kan fortsætte med at nyde dine klassikere.</p>
+        </div>
+        <section class="grid_5-3">
+
+            <img src="./img/reperation.jpeg" alt="reperation">
+            <div class=order1>
+                <p>Vi hjælper bl.a. med:</p>
+                <dl>
+                    <dt>Rensning og udskiftning af stik og kontakter</dt>
+                    <dd>Reparation af defekte controllere og knapper</dd>
+                    <dt>Udskiftning af kondensatorer og andre slidte komponenter</dt>
+                    <dd>Fejlfinding og genoplivning af gamle konsoller og spil</dd>
+                </dl>
+            </div>
+
+        </section>
+
+        <div class="knaptekst">
+            <p>Ønsker du at vide mere om priser eller har andre spørgsmål?
+                Tryk på knappen, så bliver du kontaktet af os.</p>
+            <button id="skiftKnap">Klik her for at blive kontaktet</button>
+        </div>
+
+
+
+
+
+
+
+
+    </main>
+
+    <script src="menu.js"></script>
+
+    <script>
+        const knap = document.getElementById("skiftKnap");
+
+        knap.addEventListener("click", () => {
+            if (knap.textContent === "Klik her for at blive kontaktet") {
+                knap.textContent = "Du bliver kontaktet hurtigst muligt!";
+            } else {
+                knap.textContent = "Klik her for at blive kontaktet";
+            }
+        });
+    </script>

@@ -1,0 +1,162 @@
+* {
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #d4092b, #347ebf, #f2b705, #03a696);
+  font-family: "Irish Grover", system-ui;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.8;
+  justify-content: center;
+  letter-spacing: -0.5px;
+}
+
+h1 {
+  font-size: 68px;
+  margin-top: 20px;
+  line-height: 1.4;
+  padding: 25px 10px;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.logo img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.menu {
+  font-size: 50px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+ul {
+  display: flex;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000;
+}
+
+#skiftKnap {
+  background-color: #d9d9d9;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Irish Grover", system-ui;
+  font-weight: 400;
+}
+
+#skiftKnap:hover {
+  background-color: #d9d9d9;
+  font-family: "Irish Grover", system-ui;
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: black;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background: linear-gradient(#d4092b, #347ebf, #f2b705, #03a696);
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    font-size: 36px;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
